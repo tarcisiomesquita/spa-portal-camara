@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+body {
+   background-color:whitesmoke;
+   font-family: 'Roboto', sans-serif;
+   font-size: 100%;
+}
+
+.hero-header-container {
+    background:url("../images/hero-header.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    padding: 30px 15px;
+}
+
+.nav-link {
+    font-size: 0.83em;
+    color: white;
+    font-weight: 550;
+}
+
+
+#logo {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#topo-header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+#centro-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    color: white;
+    text-align: center;
+}
+
+#centro-header h1 {
+    text-shadow: 4px 4px #163448;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#centro-header p{
+    color: #e7f5ff;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+section p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em;
+}
+
+section {
+    margin: 120px 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+section h1 {
+    color: #163448;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px
+}
+
+section h2 {
+    font-size: 1.7em; 
+}
+
+section p, .data-evento .fas {
+    color: rgb(94, 94, 94);
+}
+
+b {
+    color: black;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-title span {
+    display: block;
+}
+
+.card-body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.fab {
+    color: #163448;
+}
+
+.fas {
+    color: white;
+}
+
+#partidos form, #deputados form, #eventos-semana {
+    width: 45%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+#eventos form {
+    width: 100%;
+}
+
+button {
+    background-color: #163448;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.d-grid button:hover {
+    background-color: #002942;
+}
+
+.container-metade {
+    width: 49%;
+}
+
+article h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+article img{
+    transition: transform .2s;
+}
+
+article img:hover {
+    transform: scale(1.1);
+}
+
+#eventos input, #eventos button {
+    margin: 30px
+}
+
+.data-evento{
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+    align-items: center;
+}
+
+.border-left {
+    border-left: 3px solid #163448;
+}
+
+footer {
+    padding: 15px;
+    background-color: #163448;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+footer p {
+    font-size: 0.9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.fa-chevron-up {
+    margin: auto 10px;
+}
+
+
+@media (max-width: 576px) {}
+
+
+@media (max-width: 768px) {
+    section {
+        margin: 90px auto;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    
+    .container-metade {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #eventos input, #eventos button {
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    #topo-header {
+        justify-content: space-between;
+    }
+
+    #centro-header {
+        white-space: normal;
+    }
+}
